@@ -1,0 +1,448 @@
+$white: #f5f5f5 !default;
+$blue: #1B4973 !default;
+$orange: #E67E30 !default;
+
+* {
+	box-sizing: border-box;
+}
+
+.orange {
+	color: $orange;
+}
+
+.blue {
+	color: $blue;
+}
+
+.green {
+	color: #79A25F;
+}
+
+
+p {
+	line-height: 1.8;
+	font-weight: 400;
+}
+
+body {
+	font-family: "proxima-nova",sans-serif;
+	font-size: 14px;
+	line-height: 2;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+
+.logo {
+	img {
+	    max-height: 130px;
+	}
+}
+
+
+.navbar,
+.navbar-default {
+	background-color: #466FA1;
+	border: none;
+	border-radius: 3px 3px 0px 0px;
+	text-shadow: none;
+	margin-bottom: 0;
+  	.navbar-brand {
+    	img {
+
+    	}
+  	}
+  	.navbar-nav {
+		>li {
+			>a {
+				color: $white;
+				font-size: 13px;
+    			letter-spacing: 1px;
+    			text-transform: uppercase;
+    			i {
+    				display: none;
+    			}
+			}
+		}
+  	}
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+	background: #1C5E91;
+	color: $white;
+}
+
+.navbar-default .navbar-nav>li.active a,
+.navbar-default .navbar-nav>li.active a:hover,
+.navbar-default .navbar-nav>li.active a:focus {
+	background: #1C5E91;
+	color: $white;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+	background-color: #1C5E91;
+	color: $white;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.highlights {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	img, svg {
+		max-width: 65px;
+		margin-right: 10px;
+		float: left;
+	}
+	h3 {
+		letter-spacing: 1.5px;
+	}
+}
+
+.footer {
+	padding: 60px 0 20px 0;
+	> a {
+		margin-right: 7.5px;
+		&:not(:first-child) {
+			margin-left: 7.5px;
+		}
+	}
+}
+
+.about {
+	.content {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		h1 {
+			margin-top: 0;
+		}
+	}
+}
+
+.about .quote {
+	padding: 30px 15px;
+	font-size: 20px;
+	i.fa {
+		font-size: 22px;
+	}
+	.translation {
+		padding-top: 30px;
+		line-height: 1.6;
+		font-size: 16px;
+	}
+}
+
+
+.img-with-caption {
+	position: relative;
+	.caption {
+		position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    color: #fff;
+	    background: rgba(0,0,0,0.8);
+	    right: 0;
+	    padding-left: 20px;
+	    padding-top: 10px;
+	    border-radius: 0 0 3px 3px;
+	}
+}
+
+.timeline-header {
+	margin-bottom: 30px;
+}
+
+.timeline {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	&:before {
+		content: '';
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    width: 10px;
+	    background: #466FA1;
+	    left: 20%;
+	    margin-left: -10px;
+	    z-index: 2;
+	}
+	li {
+		list-style-type: none;
+		position: relative;
+		.time {
+			display: block;
+		    width: 25%;
+		    padding-right: 100px;
+		    position: absolute;
+		    span {
+		    	font-size: 2.9em;
+    			color: #3594cb;
+    			line-height: 1.4em;
+		    }
+		}
+		.time-point {
+			width: 40px;
+		    height: 40px;
+		    font-family: 'ecoico';
+		    speak: none;
+		    font-style: normal;
+		    font-weight: normal;
+		    font-variant: normal;
+		    text-transform: none;
+		    font-size: 1.4em;
+		    line-height: 40px;
+		    -webkit-font-smoothing: antialiased;
+		    position: absolute;
+		    color: #fff;
+		    background: #fff;
+		    border-radius: 50%;
+		    box-shadow: 0 0 0 8px #fff;
+		    text-align: center;
+		    left: 20%;
+		    top: 0;
+		    margin: 0 0 0 -25px;
+		    z-index: 3;
+		}
+		.time-content {
+			margin: 0 0 15px 22%;
+		    padding-bottom: 6em;
+		    font-size: 1.2em;
+		    font-weight: 300;
+		    line-height: 1.4;
+		    position: relative;
+		    border-radius: 5px;
+		    .timeline-arrow {
+		    	position: absolute;
+				left: -14px;
+				top: 0;
+		    	i {
+		    		color: #1B4973;
+		    		font-size: 40px;
+		    	}
+		    }
+		}
+	}
+}
+
+.puraskara .caption {
+	font-size: 14px;
+	margin-bottom: 40px;
+}
+
+.page-header {
+	margin-top: 50px;
+	border: none;
+	margin-bottom: 0;
+}
+
+
+.hero {
+	padding: 40px;
+}
+
+
+.gallery {
+	a {
+		height: 200px;
+		background-size: cover;
+		background-position: center;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+.team-rounded {
+	width: 200px;
+    margin: 40px auto;
+    border-radius: 72%;
+    overflow: hidden;
+    height: 200px;
+    border: 2px solid #ccc;
+	img {
+		width: 100%;
+	}
+}
+
+.bank-info {
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+	padding: 20px;
+	background: #f1f1f1;
+	margin-bottom: 20px;
+	img {
+		float: left;
+		max-width: 50%;
+	}
+	h3 {
+		margin-top: 0;
+	}
+}
+
+
+img.logo-stamp {
+	width: 32%;
+    float: right;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background: none;
+}
+
+
+.navbar-default .navbar-toggle {
+	border: none;
+	.icon-bar {
+		background: #fff;
+	}
+}
+
+#links {
+	a {
+		display: block;
+		position: relative;
+		background-image: url("../img/loading.gif");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: initial;
+		.preview {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			text-align: center;
+			background-position: center;
+    		background-size: cover;
+    		background-repeat: no-repeat;
+    		margin: 3px;
+		}
+	}
+}
+
+#google_translate_element {
+	padding: 8px;
+}
+
+.logo .quote {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 130px;
+	img {
+		max-height: 100%;
+	}
+}
+
+.partner-logos {
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
+	li {
+		list-style-type: none;
+		text-align: center;
+		width: 300px;
+		display: inline-block;
+		vertical-align: top;
+		a {
+			position: relative;
+		    display: block;
+		    width: 300px;
+		    height: 300px;
+			img {
+				    vertical-align: bottom;
+				    position: absolute;
+				    left: 0;
+				    right: 0;
+				    margin: auto;
+				    top: 0;
+				    bottom: 0;
+				    height: 30%;
+    				max-width: none;
+			}
+		}
+	}
+}
+
+.award-desc {
+	display: none;
+}
+
+.branding {
+	display: inline-block;
+	padding: 10px 25px;
+	color: #333;
+    background: #e4e4e4;
+    max-width: 400px;
+    margin: 15px auto 4px auto;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.branding:hover {
+	background: #f3f3f3;
+	text-decoration: none;
+}
+
+
+@media screen and (max-width: 760px) {
+	.bank-info {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
